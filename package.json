@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "eslint": "lerna run eslint --stream",
+    "flow": "lerna run flow --stream",
+    "test": "lerna run test --stream",
+    "translations:purge": "lerna run translations:purge -- stream"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": ". check-all.sh",
+      "post-checkout": "npm run translations:purge"
+    }
+  },
+  "devDependencies": {
+    "husky": "4.3.8",
+    "lerna": "^4.0.0"
+  }
+}
