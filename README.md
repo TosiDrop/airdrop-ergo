@@ -26,6 +26,12 @@ Finally, you will be able to launch the application using
 npm start
 ```
 
+## File requirements
+1) The file must be in `.csv` format
+2) As for now, there will be only **1 column** with recipient wallet addresses
+3) As for now, all addresses in a file will get the **exact equal amount**
+4) Values for ***Amount*** and ***Token type*** is initialized inside [index.js in(line 144)](src/airdrop-ergo/index.js)
+
 
 ## References
 [EIP-0012](https://github.com/ergoplatform/eips/pull/23) 
